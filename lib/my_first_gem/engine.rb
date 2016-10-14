@@ -1,6 +1,6 @@
 module MyFirstGem
   class Engine < ::Rails::Engine
     isolate_namespace MyFirstGem
-    Rails.application.config.my_config = 'foo'
+    Application.config.x.require_gem << {:gem => 'my_first_gem', :title => 'My first gem'}
   end
 end
