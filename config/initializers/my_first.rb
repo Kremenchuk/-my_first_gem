@@ -1,1 +1,1 @@
-Rails.configuration.x.require_gem << {:gem => 'my_first_gem', :title => 'My first gem'}
+Rails.configuration.x.require_gem.first = {:gem => 'my_first_gem', :title => 'My first gem'}
