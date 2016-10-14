@@ -1,6 +1,7 @@
 require "my_first_gem/engine"
 
 module MyFirstGem
+  Rails.application.config.my_config = 'foo'
   def self.add_to_const_blorgh
     $exchanger_modules_to_sidebar << {:gem => 'my_first_gem', :title => 'My first gem'}
   end
